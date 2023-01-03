@@ -400,7 +400,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await mkv.reply_text(text=f"data updated successful ",reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text = f'rudi nyuma' , callback_data = 'zkb')]]))
                 
         elif query.data == "xba":
-            await query.answer('Mandao pendwa ndio bora')
+            await query.answer('Mtandao pendwa ndio bora')
             mkv = await client.ask(text='⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️\nTafadhali Tuma namba kisha acha nafasi kampuni mfano 062466xxxx halopesa/nkumbuka namba ianze na 0 sio +255',chat_id = query.from_user.id,reply_markup=ForceReply())
             try:
                  int(mkv.text.split(" ")[0])
@@ -485,7 +485,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             else:
                 tme1=tme
             data2 = data1.split("#@")[0]
-            p1,p2,p3 =details["phone_no"].split(" ")
+            p1,p2,p3 =details["phone_no"].split(" ",3)
             mda = details["muda"]
             if tme == "m":
                 await query.edit_message_text(
