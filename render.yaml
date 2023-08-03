@@ -5,3 +5,6 @@ services:
     runtime: docker
     rootDir: app
     healthCheckPath: /
+    envVars:
+      - key: PORT
+        value: 10000
