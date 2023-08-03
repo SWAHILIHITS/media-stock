@@ -1,4 +1,4 @@
-
+services:
   # A Docker web service
   - type: web
     name: webdis
