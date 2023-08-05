@@ -1,1 +1,4 @@
-print("bot started")
+
+def appr():
+  print("bot started")
+app=appr()
