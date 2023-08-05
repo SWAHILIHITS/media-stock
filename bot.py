@@ -33,7 +33,9 @@ class Bot(Client):
         await super().stop()
         print("Bot stopped. Bye.")
 
-
+def ass():
+    print("hiiiiiiii")
+appp=ass()
 app = Bot()
 HOST = os.getenv("HOST", "0.0.0.0")
 PORT = os.getenv("PORT", 8080)   
