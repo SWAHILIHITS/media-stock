@@ -36,7 +36,7 @@ class Bot(Client):
 def ass():
     print("hiiiiiiii")
 appp=ass()
-app = Bot()
+#app = Bot()
 HOST = os.getenv("HOST", "0.0.0.0")
 PORT = os.getenv("PORT", 8080)   
-uvicorn.run(app, host=HOST, port=PORT)
+uvicorn.run(Bot(), host=HOST, port=PORT)
