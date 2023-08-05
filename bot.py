@@ -3,7 +3,7 @@ import logging.config
 # Get logging configurations
 logging.config.fileConfig('logging.conf')
 logging.getLogger().setLevel(logging.ERROR)
-
+import uvicorn,os
 from pyrogram import Client, __version__
 from pyrogram.raw.all import layer
 from utils import Media
@@ -35,4 +35,6 @@ class Bot(Client):
 
 
 app = Bot()
-app.run()
+HOST = os.getenv("HOST", "0.0.0.0")
+PORT = os.getenv("PORT", 8080)   
+uvicorn.run(app, host=HOST, port=PORT)
