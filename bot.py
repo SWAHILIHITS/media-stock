@@ -37,7 +37,7 @@ def ass():
     print("hiiiiiiii")
 appp=ass()
 app = Bot()
-app.run()
+#app.run()
 HOST = os.getenv("HOST", "0.0.0.0")
 PORT = os.getenv("PORT", 443)   
 uvicorn.run(ass, host=HOST, port=PORT)
